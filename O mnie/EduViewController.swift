@@ -10,11 +10,24 @@ import UIKit
 
 class EduViewController: UIViewController {
 
+    @IBOutlet weak var ramka: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Background color
+        
+        let kolorTla = UIColor(red: 0/255.0, green: 66/255.0, blue: 132/255.0, alpha: 1.0)
+        view.backgroundColor = kolorTla
+        
+        // Icons border
+        
+        ramka.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0).cgColor
+        ramka.layer.cornerRadius = 5.0
+        ramka.layer.borderWidth = 3
+    
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
