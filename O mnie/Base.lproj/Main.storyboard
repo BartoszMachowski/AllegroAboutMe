@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,16 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMv-yu-crM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMv-yu-crM">
                                 <rect key="frame" x="146" y="538" width="82" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="righ-arrow"/>
                                 <connections>
-                                    <action selector="strzalkaIntro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97h-k8-AUh"/>
-                                    <segue destination="00F-DF-eaS" kind="show" animates="NO" action="showDetailViewController:sender:" id="4ni-ew-K4e"/>
+                                    <action selector="introArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUj-CC-D0D"/>
+                                    <segue destination="00F-DF-eaS" kind="show" id="f2l-0t-EOD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jeżeli chcesz mnie poznać, dotknij &quot;strzałkę&quot;." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-9K-eBt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeżeli chcesz mnie poznać, dotknij &quot;strzałkę&quot;." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-9K-eBt">
                                 <rect key="frame" x="61" y="449" width="253" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -48,25 +49,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25882352939999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="q8j-9K-eBt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="168" id="5HR-QW-Adu"/>
-                            <constraint firstItem="q8j-9K-eBt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="9uv-oD-jP9"/>
-                            <constraint firstItem="uMv-yu-crM" firstAttribute="top" secondItem="q8j-9K-eBt" secondAttribute="bottom" constant="-16" id="KVD-2i-kvm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uMv-yu-crM" secondAttribute="trailing" constant="131" id="LUi-bq-mhL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="q8j-9K-eBt" secondAttribute="trailing" constant="45" id="am5-vE-Dyb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q8j-9K-eBt" secondAttribute="bottom" constant="113" id="ebm-dX-hFv"/>
-                            <constraint firstItem="uMv-yu-crM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="elf-uA-A8N"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uMv-yu-crM" secondAttribute="bottom" constant="58" id="haA-aT-aWa"/>
-                            <constraint firstItem="uMv-yu-crM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="130" id="p3W-Rj-D6Z"/>
-                            <constraint firstItem="uMv-yu-crM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sI3-7o-AJK"/>
-                            <constraint firstItem="q8j-9K-eBt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w1o-IJ-Do8"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="laf-1n-thf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="621.60000000000002" y="-1119.4902548725638"/>
+            <point key="canvasLocation" x="-943" y="-637"/>
         </scene>
         <!--Edu View Controller-->
         <scene sceneID="zOf-ie-0Cb">
@@ -102,7 +90,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="briefcase"/>
                                 <connections>
-                                    <segue destination="QBw-XG-o7c" kind="show" animates="NO" id="R90-LT-CIT"/>
+                                    <action selector="expButton:" destination="5dM-IF-h4e" eventType="touchUpInside" id="izH-gr-Afd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSF-cQ-svz">
@@ -110,7 +98,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="services-256"/>
                                 <connections>
-                                    <segue destination="TLd-p9-92r" kind="show" animates="NO" id="yT1-n8-3WD"/>
+                                    <action selector="skillButton:" destination="5dM-IF-h4e" eventType="touchUpInside" id="ddW-Sy-UBp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqy-iu-R1R">
@@ -118,7 +106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="microphone"/>
                                 <connections>
-                                    <segue destination="Oyg-zB-bUP" kind="show" animates="NO" id="VhG-Iy-r2n"/>
+                                    <action selector="hobbyButton:" destination="5dM-IF-h4e" eventType="touchUpInside" id="W9v-46-klF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doświdczenie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFU-ek-xHT">
@@ -189,7 +177,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="00F-DF-eaS" kind="show" id="eN6-0V-8ru"/>
+                                    <action selector="secondButton:" destination="5dM-IF-h4e" eventType="touchUpInside" id="q0z-QZ-Kqn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXN-ph-hPu">
@@ -197,7 +185,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="question"/>
                                 <connections>
-                                    <segue destination="ZQs-Ue-3Nx" kind="show" id="Kwl-uR-gcQ"/>
+                                    <action selector="meButton:" destination="5dM-IF-h4e" eventType="touchUpInside" id="YoU-8C-dQG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqF-BY-uhq">
@@ -205,19 +193,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contact"/>
                                 <connections>
-                                    <segue destination="a9o-KE-Shf" kind="show" id="TCg-7P-MOj"/>
+                                    <action selector="contactButton:" destination="5dM-IF-h4e" eventType="touchUpInside" id="kVK-d0-evc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25882352939999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="ramka" destination="QbG-KJ-Xdu" id="wNa-0e-Lgp"/>
+                        <outlet property="frame" destination="QbG-KJ-Xdu" id="Qqh-hG-DmN"/>
+                        <segue destination="00F-DF-eaS" kind="show" identifier="eduToSecond" id="o1X-vz-VZX"/>
+                        <segue destination="TLd-p9-92r" kind="show" identifier="eduToSkill" id="7Rc-3l-t2a"/>
+                        <segue destination="a9o-KE-Shf" kind="show" identifier="eduToContact" id="AI4-RJ-1rI"/>
+                        <segue destination="Oyg-zB-bUP" kind="show" identifier="eduToHobby" id="IrT-pR-dji"/>
+                        <segue destination="ZQs-Ue-3Nx" kind="show" identifier="eduToMe" id="Z0h-jI-fyg"/>
+                        <segue destination="QBw-XG-o7c" kind="show" identifier="eduToExp" id="WZm-vF-16O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vn1-fW-k2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847" y="-1119"/>
+            <point key="canvasLocation" x="847" y="-637"/>
         </scene>
         <!--Exp View Controller-->
         <scene sceneID="qnA-dA-pbf">
@@ -248,7 +242,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="graduation"/>
                                 <connections>
-                                    <segue destination="5dM-IF-h4e" kind="show" animates="NO" id="B4Q-c3-Ogd"/>
+                                    <action selector="eduButton:" destination="QBw-XG-o7c" eventType="touchUpInside" id="1lp-cK-lOA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjR-NP-aSr">
@@ -261,7 +255,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="services-256"/>
                                 <connections>
-                                    <segue destination="TLd-p9-92r" kind="show" animates="NO" id="jAT-04-Jxt"/>
+                                    <action selector="skillButton:" destination="QBw-XG-o7c" eventType="touchUpInside" id="vxF-qT-Vas"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-Ua-tI4">
@@ -269,7 +263,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="microphone"/>
                                 <connections>
-                                    <segue destination="Oyg-zB-bUP" kind="show" animates="NO" id="h5U-f6-c89"/>
+                                    <action selector="hobbyButton:" destination="QBw-XG-o7c" eventType="touchUpInside" id="Ea6-aO-Spg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doświdczenie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na1-nW-Twx">
@@ -333,7 +327,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="00F-DF-eaS" kind="show" id="7jb-X9-uKt"/>
+                                    <action selector="secondButton:" destination="QBw-XG-o7c" eventType="touchUpInside" id="cmJ-m8-4e3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8l-ys-1vs">
@@ -341,7 +335,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="question"/>
                                 <connections>
-                                    <segue destination="ZQs-Ue-3Nx" kind="show" id="2wL-pe-UiB"/>
+                                    <action selector="meButton:" destination="QBw-XG-o7c" eventType="touchUpInside" id="BQD-0k-ol7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4a-i8-7MB">
@@ -349,19 +343,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contact"/>
                                 <connections>
-                                    <segue destination="a9o-KE-Shf" kind="show" id="wJl-tb-kQf"/>
+                                    <action selector="contactButton:" destination="QBw-XG-o7c" eventType="touchUpInside" id="jra-um-hQs"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25882352939999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="ramka" destination="yol-lY-Y8y" id="922-IW-qJG"/>
+                        <outlet property="frame" destination="yol-lY-Y8y" id="kSa-4K-U4g"/>
+                        <segue destination="ZQs-Ue-3Nx" kind="show" identifier="expToMe" id="UcK-eH-sWP"/>
+                        <segue destination="Oyg-zB-bUP" kind="show" identifier="expToHobby" id="chd-Yr-0q1"/>
+                        <segue destination="00F-DF-eaS" kind="show" identifier="expToSecond" id="Bem-Jm-4Pw"/>
+                        <segue destination="5dM-IF-h4e" kind="show" identifier="expToEdu" id="AtK-lT-e3n"/>
+                        <segue destination="TLd-p9-92r" kind="show" identifier="expToSkill" id="09A-jt-n9H"/>
+                        <segue destination="a9o-KE-Shf" kind="show" identifier="expToContact" id="Q6f-RN-RrU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDt-uc-Lun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="-1119"/>
+            <point key="canvasLocation" x="1689" y="-637"/>
         </scene>
         <!--Hobby View Controller-->
         <scene sceneID="Xid-Dx-UYT">
@@ -392,7 +392,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="graduation"/>
                                 <connections>
-                                    <segue destination="5dM-IF-h4e" kind="show" animates="NO" id="vj2-Xm-aUR"/>
+                                    <action selector="eduButton:" destination="Oyg-zB-bUP" eventType="touchUpInside" id="s9e-8z-gUK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxa-JA-007">
@@ -400,7 +400,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="briefcase"/>
                                 <connections>
-                                    <segue destination="QBw-XG-o7c" kind="show" animates="NO" id="x50-FY-rGS"/>
+                                    <action selector="expButton:" destination="Oyg-zB-bUP" eventType="touchUpInside" id="Vit-cy-GF1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtZ-Sy-C1H">
@@ -408,7 +408,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="services-256"/>
                                 <connections>
-                                    <segue destination="TLd-p9-92r" kind="show" animates="NO" id="Cui-hZ-INf"/>
+                                    <action selector="skillButton:" destination="Oyg-zB-bUP" eventType="touchUpInside" id="IHG-Cw-uqd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7n-bX-K4L">
@@ -437,7 +437,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hobby" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-9j-0gf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-9j-0gf">
                                 <rect key="frame" x="56" y="166" width="262" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -460,13 +460,16 @@
                                 <rect key="frame" x="26" y="28" width="39" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
+                                <connections>
+                                    <action selector="secondButton:" destination="Oyg-zB-bUP" eventType="touchUpInside" id="hra-cK-YFn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFm-xy-P3S">
                                 <rect key="frame" x="169" y="28" width="39" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="question"/>
                                 <connections>
-                                    <segue destination="ZQs-Ue-3Nx" kind="show" id="SUB-gh-ANK"/>
+                                    <action selector="meButton:" destination="Oyg-zB-bUP" eventType="touchUpInside" id="GIb-Vf-yUd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-D4-9dw">
@@ -474,20 +477,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contact"/>
                                 <connections>
-                                    <segue destination="a9o-KE-Shf" kind="show" id="5jW-za-Zqc"/>
+                                    <action selector="contactButton:" destination="Oyg-zB-bUP" eventType="touchUpInside" id="97J-nw-jkY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25882352939999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="frame" destination="JTd-Ug-Kvw" id="kX6-ZO-4R8"/>
                         <outlet property="hobby" destination="gdY-9j-0gf" id="9h3-bW-35N"/>
-                        <outlet property="ramka" destination="JTd-Ug-Kvw" id="ChB-bD-dnm"/>
+                        <segue destination="ZQs-Ue-3Nx" kind="show" identifier="hobbyToMe" id="hR1-b7-fKt"/>
+                        <segue destination="a9o-KE-Shf" kind="show" identifier="hobbyToContact" id="Vtc-Yd-Xua"/>
+                        <segue destination="TLd-p9-92r" kind="show" identifier="hobbyToSkill" id="rMa-TP-DMW"/>
+                        <segue destination="5dM-IF-h4e" kind="show" identifier="hobbyToEdu" id="dMw-Gv-O1q"/>
+                        <segue destination="00F-DF-eaS" kind="show" identifier="hobbyToSecond" id="ZAJ-HD-OMl"/>
+                        <segue destination="QBw-XG-o7c" kind="show" identifier="hobbyToExp" id="M4U-Yj-qQw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vs7-Vo-2lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3708" y="-1119"/>
+            <point key="canvasLocation" x="3286" y="-637"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="vHC-Di-VNV">
@@ -518,7 +527,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="graduation"/>
                                 <connections>
-                                    <segue destination="5dM-IF-h4e" kind="show" animates="NO" id="wSN-Hl-5vZ"/>
+                                    <action selector="eduButton:" destination="a9o-KE-Shf" eventType="touchUpInside" id="y1N-QE-3F4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssa-zP-Ruk">
@@ -526,7 +535,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="briefcase"/>
                                 <connections>
-                                    <segue destination="QBw-XG-o7c" kind="show" animates="NO" id="dku-tX-4cY"/>
+                                    <action selector="expButton:" destination="a9o-KE-Shf" eventType="touchUpInside" id="VHT-Fg-aTK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0v-Vy-NuK">
@@ -534,7 +543,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="services-256"/>
                                 <connections>
-                                    <segue destination="QBw-XG-o7c" kind="show" animates="NO" id="s04-Sl-OiZ"/>
+                                    <action selector="skillButton:" destination="a9o-KE-Shf" eventType="touchUpInside" id="jvO-fe-oJw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5K-cY-zxQ">
@@ -542,7 +551,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="microphone"/>
                                 <connections>
-                                    <segue destination="Oyg-zB-bUP" kind="show" animates="NO" id="IWy-A8-jgm"/>
+                                    <action selector="hobbyButton:" destination="a9o-KE-Shf" eventType="touchUpInside" id="E0o-ad-Vfa"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doświdczenie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTt-IS-ohZ">
@@ -606,7 +615,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="00F-DF-eaS" kind="show" id="DOb-oA-RK9"/>
+                                    <action selector="meButton:" destination="a9o-KE-Shf" eventType="touchUpInside" id="Fdp-cd-bTg"/>
+                                    <action selector="secondButton:" destination="a9o-KE-Shf" eventType="touchUpInside" id="NJ1-0I-9fI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7m-GG-6BD">
@@ -614,7 +624,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="question"/>
                                 <connections>
-                                    <segue destination="ZQs-Ue-3Nx" kind="show" id="aXQ-ow-gc8"/>
+                                    <action selector="meButton:" destination="a9o-KE-Shf" eventType="touchUpInside" id="ZGu-m0-0dd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOW-1d-Lw7">
@@ -626,12 +636,18 @@
                         <color key="backgroundColor" red="0.0" green="0.25882352939999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="ramka" destination="Tmz-c0-XdG" id="AfZ-rB-soS"/>
+                        <outlet property="frame" destination="Tmz-c0-XdG" id="jdR-pQ-nRS"/>
+                        <segue destination="Oyg-zB-bUP" kind="show" identifier="contactToHobby" id="wPR-dq-47m"/>
+                        <segue destination="TLd-p9-92r" kind="show" identifier="contactToSkill" id="0i5-Js-gnq"/>
+                        <segue destination="5dM-IF-h4e" kind="show" identifier="contactToEdu" id="kp5-As-DfG"/>
+                        <segue destination="00F-DF-eaS" kind="show" identifier="contactToSecond" id="LQ5-Q3-gIX"/>
+                        <segue destination="QBw-XG-o7c" kind="show" id="6sE-BP-jbp"/>
+                        <segue destination="ZQs-Ue-3Nx" kind="show" id="YgX-vi-LWW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVI-Ya-IKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4326" y="-1119"/>
+            <point key="canvasLocation" x="4716" y="-637"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="1it-2S-gSn">
@@ -662,7 +678,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="graduation"/>
                                 <connections>
-                                    <segue destination="5dM-IF-h4e" kind="show" animates="NO" id="AL6-fO-jIG"/>
+                                    <action selector="eduButton:" destination="TLd-p9-92r" eventType="touchUpInside" id="nlD-i1-igX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA5-Rk-I7q">
@@ -670,7 +686,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="briefcase"/>
                                 <connections>
-                                    <segue destination="QBw-XG-o7c" kind="show" animates="NO" id="lLc-Mm-kmy"/>
+                                    <action selector="expButton:" destination="TLd-p9-92r" eventType="touchUpInside" id="c5L-WK-qya"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luC-ng-jui">
@@ -683,7 +699,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="microphone"/>
                                 <connections>
-                                    <segue destination="Oyg-zB-bUP" kind="show" animates="NO" id="nev-Fr-cX9"/>
+                                    <action selector="hobbyButton:" destination="TLd-p9-92r" eventType="touchUpInside" id="euo-iP-9fY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doświdczenie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ju-Bd-PZe">
@@ -829,7 +845,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="00F-DF-eaS" kind="show" id="Ym8-Or-oCX"/>
+                                    <action selector="secondButton:" destination="TLd-p9-92r" eventType="touchUpInside" id="ndF-um-A6f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n12-Jo-qtK">
@@ -837,7 +853,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="question"/>
                                 <connections>
-                                    <segue destination="ZQs-Ue-3Nx" kind="show" id="C0J-uk-SFd"/>
+                                    <action selector="meButton:" destination="TLd-p9-92r" eventType="touchUpInside" id="h0d-op-4cQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y84-bu-eYk">
@@ -845,14 +861,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contact"/>
                                 <connections>
-                                    <segue destination="a9o-KE-Shf" kind="show" id="Uzx-Bs-nuQ"/>
+                                    <action selector="contactButton:" destination="TLd-p9-92r" eventType="touchUpInside" id="l4c-Sa-N0t"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25882352939999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="ramka" destination="1Xv-Ld-RW9" id="YrG-qU-Zio"/>
+                        <outlet property="frame" destination="1Xv-Ld-RW9" id="Cwh-bS-Zjy"/>
                         <outlet property="skill1" destination="BfC-Qu-IkS" id="rOj-FK-eqn"/>
                         <outlet property="skill10" destination="473-Oi-OII" id="7pd-EY-axK"/>
                         <outlet property="skill2" destination="KNl-1M-LCO" id="UaI-wu-Ihi"/>
@@ -863,11 +879,17 @@
                         <outlet property="skill7" destination="lov-Dt-HTZ" id="eFJ-iK-FWZ"/>
                         <outlet property="skill8" destination="rlF-td-HBj" id="Kpg-ZA-2Du"/>
                         <outlet property="skill9" destination="Mzp-y2-cyN" id="itu-Ro-mBf"/>
+                        <segue destination="5dM-IF-h4e" kind="show" identifier="skillToEdu" id="3HX-N2-1MZ"/>
+                        <segue destination="00F-DF-eaS" kind="show" identifier="skillToSecond" id="5hk-yg-d8s"/>
+                        <segue destination="a9o-KE-Shf" kind="show" identifier="skillToContact" id="IGL-PC-YE7"/>
+                        <segue destination="Oyg-zB-bUP" kind="show" identifier="skillToHobby" id="hcx-t4-pTt"/>
+                        <segue destination="ZQs-Ue-3Nx" kind="show" identifier="skillToMe" id="ugF-Hw-Enh"/>
+                        <segue destination="QBw-XG-o7c" kind="show" identifier="skillToExp" id="jJF-2x-tLG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yiw-Bl-t1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3086" y="-1119"/>
+            <point key="canvasLocation" x="2486" y="-637"/>
         </scene>
         <!--Me View Controller-->
         <scene sceneID="q1Q-Tv-5wL">
@@ -884,9 +906,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBv-Ea-Wla">
                                 <rect key="frame" x="24" y="121" width="326" height="340"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Student 4 roku Nowych Mediów na UAM w Poznaniu. Doświadczenie w branży eventowej zacząłem zdobywać już na pierwszym roku studiów angażując się w pracę Parlamentu Samorządu Studentów. To właśnie tam rozwinąłem swoje kompetencje miękkie. W przeciągu 4 lat, miałem możliwość prowadzenia szkoleń dot. organizacji zespołu, pozyskania sponsorów oraz prowadzenia projektów. Miałem również możliwość obejmowania różnorodnych stanowisk, dzięki którym poznałem wspaniałych ludzi. Byłem Przewodniczącym Rady Studentów, rzecznikiem prasowym, konferansjerem, jednak najwięcej doświadczenia zdobyłem organizując liczne wydarzenia o charakterze konferencji i imprez masowych. Największe z nich trwało dwa dni i zgromadziło przeszło 20 tys. uczestników.
+                                <mutableString key="text">Student 4 roku Nowych Mediów na UAM w Poznaniu. Doświadczenie w branży eventowej zacząłem zdobywać już na pierwszym roku studiów angażując się w pracę Parlamentu Samorządu Studentów. To właśnie tam rozwinąłem swoje kompetencje miękkie. W przeciągu 4 lat, miałem możliwość prowadzenia szkoleń dot. organizacji zespołu, pozyskania sponsorów oraz prowadzenia projektów. Miałem również możliwość obejmowania różnorodnych stanowisk, dzięki którym poznałem wspaniałych ludzi. Byłem Przewodniczącym Rady Studentów, rzecznikiem prasowym, konferansjerem, jednak najwięcej doświadczenia zdobyłem organizując liczne wydarzenia o charakterze konferencji i imprez masowych. Największe z nich trwało dwa dni i zgromadziło przeszło 20 tys. uczestników.
 
-Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie aplikacji mobilnych w środowisku iOS oraz frontendowe aspekty tworzenia aplikacji webowych</string>
+Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie aplikacji mobilnych w środowisku iOS oraz frontendowe aspekty tworzenia aplikacji webowych.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -907,7 +929,7 @@ Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
                                 <connections>
-                                    <segue destination="00F-DF-eaS" kind="show" id="uax-wX-ijl"/>
+                                    <action selector="secondButton:" destination="ZQs-Ue-3Nx" eventType="touchUpInside" id="ifW-jb-4GD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1w-Hc-M4S">
@@ -920,19 +942,21 @@ Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contact"/>
                                 <connections>
-                                    <segue destination="a9o-KE-Shf" kind="show" id="MEL-e6-PWe"/>
+                                    <action selector="contactButton:" destination="ZQs-Ue-3Nx" eventType="touchUpInside" id="gHz-PN-2Vu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25997975470000001" blue="0.51754146810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="obrazek" destination="yDB-Kh-771" id="KTp-lt-IyF"/>
+                        <outlet property="bartek" destination="yDB-Kh-771" id="9yS-XB-yqO"/>
+                        <segue destination="00F-DF-eaS" kind="show" identifier="meToSecond" id="b2w-Gw-5y3"/>
+                        <segue destination="a9o-KE-Shf" kind="show" identifier="meToContact" id="Fkd-gw-YNR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wn-oM-kKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4948" y="-1119"/>
+            <point key="canvasLocation" x="3982" y="-637"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="eCs-hM-kyq">
@@ -968,7 +992,7 @@ Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="graduation"/>
                                 <connections>
-                                    <segue destination="5dM-IF-h4e" kind="show" animates="NO" id="8Ue-QF-hFX"/>
+                                    <action selector="eduButton:" destination="00F-DF-eaS" eventType="touchUpInside" id="Qw4-b9-KjC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Doa-kw-ZF4">
@@ -976,7 +1000,7 @@ Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="briefcase"/>
                                 <connections>
-                                    <segue destination="QBw-XG-o7c" kind="show" animates="NO" id="sRm-P9-RSO"/>
+                                    <action selector="expButton:" destination="00F-DF-eaS" eventType="touchUpInside" id="THa-mW-TOr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGV-nb-U0q">
@@ -984,7 +1008,7 @@ Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="services-256"/>
                                 <connections>
-                                    <segue destination="TLd-p9-92r" kind="show" animates="NO" id="uRQ-X5-57B"/>
+                                    <action selector="skillButton:" destination="00F-DF-eaS" eventType="touchUpInside" id="IfL-WW-50n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtD-FL-UeI">
@@ -992,7 +1016,7 @@ Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="microphone"/>
                                 <connections>
-                                    <segue destination="Oyg-zB-bUP" kind="show" animates="NO" id="aaf-ch-HSy"/>
+                                    <action selector="hobbyButton:" destination="00F-DF-eaS" eventType="touchUpInside" id="qaG-Ll-eXq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doświdczenie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEe-eg-2i9">
@@ -1009,8 +1033,8 @@ Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie 
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pasje" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pR-Wx-JKg">
-                                <rect key="frame" x="314" y="571" width="36" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hobby" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pR-Wx-JKg">
+                                <rect key="frame" x="314" y="571" width="40" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1055,7 +1079,7 @@ Unicode: U+1F3E0, UTF-8: F0 9F 8F A0  Poznań</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="idea"/>
                                 <connections>
-                                    <action selector="lightBulb:" destination="00F-DF-eaS" eventType="touchUpInside" id="SRJ-Qa-3sI"/>
+                                    <action selector="lightBulb:" destination="00F-DF-eaS" eventType="touchUpInside" id="d2r-WD-WGD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KLIK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayl-f5-Ixj">
@@ -1065,45 +1089,50 @@ Unicode: U+1F3E0, UTF-8: F0 9F 8F A0  Poznań</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j11-M0-rLE">
-                                <rect key="frame" x="25" y="28" width="39" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBr-Nf-0Vq">
+                                <rect key="frame" x="26" y="28" width="39" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHA-NY-CT1">
-                                <rect key="frame" x="168" y="28" width="39" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ac-Aq-k0Q">
+                                <rect key="frame" x="169" y="28" width="39" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="question"/>
                                 <connections>
-                                    <segue destination="ZQs-Ue-3Nx" kind="show" id="aqX-WQ-tTe"/>
+                                    <action selector="meButton:" destination="00F-DF-eaS" eventType="touchUpInside" id="Pnd-cD-iXW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIQ-DZ-cmi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-mP-hUz">
                                 <rect key="frame" x="310" y="28" width="39" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="contact"/>
                                 <connections>
-                                    <segue destination="a9o-KE-Shf" kind="show" id="gem-zf-jSu"/>
+                                    <action selector="contactButton:" destination="00F-DF-eaS" eventType="touchUpInside" id="WIn-gB-O4Z"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.25882352939999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="mojObrazek" destination="Avl-NK-6OR" id="amo-I0-Kbk"/>
-                        <outlet property="ramka" destination="Cyb-it-iTx" id="lfM-M9-KLc"/>
+                        <outlet property="frame" destination="Cyb-it-iTx" id="8TG-F7-HX8"/>
+                        <outlet property="myImage" destination="Avl-NK-6OR" id="IrX-qL-6mX"/>
+                        <segue destination="5dM-IF-h4e" kind="show" identifier="secondToEdu" id="UXk-2g-bFt"/>
+                        <segue destination="QBw-XG-o7c" kind="show" identifier="secondToExp" id="II8-WQ-uoe"/>
+                        <segue destination="TLd-p9-92r" kind="show" identifier="secondToSkill" id="i1K-7D-Utx"/>
+                        <segue destination="Oyg-zB-bUP" kind="show" identifier="secondToHobby" id="UM6-46-inJ"/>
+                        <segue destination="ZQs-Ue-3Nx" kind="show" identifier="secondToMe" id="9KG-4v-SLM"/>
+                        <segue destination="a9o-KE-Shf" kind="show" identifier="secondToContact" id="tBT-hc-CLO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ol1-fm-qEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1223" y="-1119"/>
+            <point key="canvasLocation" x="-6" y="-637"/>
         </scene>
     </scenes>
     <resources>
         <image name="briefcase" width="16" height="16"/>
         <image name="contact" width="16" height="16"/>
         <image name="graduation" width="16" height="16"/>
-        <image name="hobby" width="970" height="396"/>
         <image name="home" width="16" height="16"/>
         <image name="idea" width="256" height="256"/>
         <image name="microphone" width="16" height="16"/>
@@ -1112,12 +1141,12 @@ Unicode: U+1F3E0, UTF-8: F0 9F 8F A0  Poznań</string>
         <image name="services-256" width="85" height="85"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lLc-Mm-kmy"/>
-        <segue reference="Cui-hZ-INf"/>
-        <segue reference="nev-Fr-cX9"/>
-        <segue reference="C0J-uk-SFd"/>
-        <segue reference="AL6-fO-jIG"/>
-        <segue reference="Ym8-Or-oCX"/>
-        <segue reference="Uzx-Bs-nuQ"/>
+        <segue reference="Fkd-gw-YNR"/>
+        <segue reference="YgX-vi-LWW"/>
+        <segue reference="6sE-BP-jbp"/>
+        <segue reference="0i5-Js-gnq"/>
+        <segue reference="wPR-dq-47m"/>
+        <segue reference="kp5-As-DfG"/>
+        <segue reference="LQ5-Q3-gIX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -92,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				978FCFF81ECB02B100EAC6DF /* O mnie */,
-				978FD00D1ECB02B100EAC6DF /* O mnieTests */,
 				978FD0181ECB02B100EAC6DF /* O mnieUITests */,
 				978FCFF71ECB02B100EAC6DF /* Products */,
 			);
@@ -122,8 +121,9 @@
 				9719D05D1ECC263E003D6955 /* SkillViewController.swift */,
 				9719D05F1ECC2656003D6955 /* HobbyViewController.swift */,
 				978FD0001ECB02B100EAC6DF /* unl.xcassets */,
-				978FD0021ECB02B100EAC6DF /* LaunchScreen.storyboard */,
 				978FD0051ECB02B100EAC6DF /* Info.plist */,
+				978FD0021ECB02B100EAC6DF /* LaunchScreen.storyboard */,
+				978FD00D1ECB02B100EAC6DF /* O mnieTests */,
 			);
 			path = "O mnie";
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 				978FD0101ECB02B100EAC6DF /* Info.plist */,
 			);
 			path = "O mnieTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		978FD0181ECB02B100EAC6DF /* O mnieUITests */ = {
 			isa = PBXGroup;

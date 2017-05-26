@@ -10,49 +10,80 @@ import UIKit
 
 class HobbyViewController: UIViewController {
 
-    @IBOutlet weak var ramka: UIView!
+    @IBOutlet weak var frame: UIView!
     @IBOutlet weak var hobby: UIImageView!
+    
+// Navigation
+    
+    @IBAction func meButton(_ sender: Any) {
+        let toMe = MeViewController()
+        toMe.dismiss(animated: false, completion: nil)
+        UIView.setAnimationsEnabled(true)
+        self.performSegue(withIdentifier: "hobbyToMe", sender: nil)
+    }
+    
+    @IBAction func secondButton(_ sender: Any) {
+        let toSecond = SecondViewController()
+        toSecond.dismiss(animated: false, completion: nil)
+        UIView.setAnimationsEnabled(true)
+        self.performSegue(withIdentifier: "hobbyToSecond", sender: nil)
+        
+    }
+    @IBAction func contactButton(_ sender: Any) {
+        let toContact = ContactViewController()
+        toContact.dismiss(animated: false, completion: nil)
+        UIView.setAnimationsEnabled(true)
+        self.performSegue(withIdentifier: "hobbyToContact",sender:nil)
+    }
+    
+    @IBAction func expButton(_ sender: Any) {
+        let toExp = ExpViewController()
+        toExp.dismiss(animated: false, completion: nil)
+        UIView.setAnimationsEnabled(false)
+        self.performSegue(withIdentifier: "hobbyToExp", sender: nil)
+    }
+    
+    @IBAction func skillButton(_ sender: Any) {
+        let toSkill = SkillViewController()
+        toSkill.dismiss(animated: false, completion: nil)
+        UIView.setAnimationsEnabled(false)
+        self.performSegue(withIdentifier: "hobbyToSkill", sender: nil)
+    }
+    
+    @IBAction func eduButton(_ sender: Any) {
+        let toHobby = HobbyViewController()
+        toHobby.dismiss(animated: false, completion: nil)
+        UIView.setAnimationsEnabled(false)
+        self.performSegue(withIdentifier: "hobbyToEdu", sender: nil)
+    }
 
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+override func viewDidLoad() {
 
-        // Background color
-        
-        let kolorTla = UIColor(red: 0/255.0, green: 66/255.0, blue: 132/255.0, alpha: 1.0)
-        view.backgroundColor = kolorTla
-        
-        // Icons border
-        
-        ramka.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0).cgColor
-        ramka.layer.cornerRadius = 5.0
-        ramka.layer.borderWidth = 3
-        
 
         
-        // Image border
+// Background color
+        
+        let backgroundColor = UIColor(red: 0/255.0, green: 66/255.0, blue: 132/255.0, alpha: 1.0)
+        view.backgroundColor = backgroundColor
+        
+// Icons border
+        
+        frame.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0).cgColor
+        frame.layer.cornerRadius = 5.0
+        frame.layer.borderWidth = 3
+        
+// Image
+        
+        hobby.image = UIImage(named: "hobby")
+        
+// Image border
         
         hobby.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0).cgColor
         hobby.layer.cornerRadius = 5.0
         hobby.layer.borderWidth = 3
         hobby.contentMode = .scaleAspectFit
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
