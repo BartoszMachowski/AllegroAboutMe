@@ -211,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vn1-fW-k2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="-637"/>
+            <point key="canvasLocation" x="849" y="-637"/>
         </scene>
         <!--Exp View Controller-->
         <scene sceneID="qnA-dA-pbf">
@@ -641,8 +641,8 @@
                         <segue destination="TLd-p9-92r" kind="show" identifier="contactToSkill" id="0i5-Js-gnq"/>
                         <segue destination="5dM-IF-h4e" kind="show" identifier="contactToEdu" id="kp5-As-DfG"/>
                         <segue destination="00F-DF-eaS" kind="show" identifier="contactToSecond" id="LQ5-Q3-gIX"/>
-                        <segue destination="QBw-XG-o7c" kind="show" id="6sE-BP-jbp"/>
-                        <segue destination="ZQs-Ue-3Nx" kind="show" id="YgX-vi-LWW"/>
+                        <segue destination="QBw-XG-o7c" kind="show" identifier="contactToExp" id="6sE-BP-jbp"/>
+                        <segue destination="ZQs-Ue-3Nx" kind="show" identifier="contactToMe" id="YgX-vi-LWW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVI-Ya-IKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -906,9 +906,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBv-Ea-Wla">
                                 <rect key="frame" x="24" y="121" width="326" height="340"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Student 4 roku Nowych Mediów na UAM w Poznaniu. Doświadczenie w branży eventowej zacząłem zdobywać już na pierwszym roku studiów angażując się w pracę Parlamentu Samorządu Studentów. To właśnie tam rozwinąłem swoje kompetencje miękkie. W przeciągu 4 lat, miałem możliwość prowadzenia szkoleń dot. organizacji zespołu, pozyskania sponsorów oraz prowadzenia projektów. Miałem również możliwość obejmowania różnorodnych stanowisk, dzięki którym poznałem wspaniałych ludzi. Byłem Przewodniczącym Rady Studentów, rzecznikiem prasowym, konferansjerem, jednak najwięcej doświadczenia zdobyłem organizując liczne wydarzenia o charakterze konferencji i imprez masowych. Największe z nich trwało dwa dni i zgromadziło przeszło 20 tys. uczestników.
+                                <string key="text">Student 4 roku Nowych Mediów na UAM w Poznaniu. Doświadczenie w branży eventowej zacząłem zdobywać już na pierwszym roku studiów angażując się w pracę Parlamentu Samorządu Studentów. To właśnie tam rozwinąłem swoje kompetencje miękkie. W przeciągu 4 lat, miałem możliwość prowadzenia szkoleń dot. organizacji zespołu, pozyskania sponsorów oraz prowadzenia projektów. Miałem również możliwość obejmowania różnorodnych stanowisk, dzięki którym poznałem wspaniałych ludzi. Byłem Przewodniczącym Rady Studentów, rzecznikiem prasowym, konferansjerem, jednak najwięcej doświadczenia zdobyłem organizując liczne wydarzenia o charakterze konferencji i imprez masowych. Największe z nich trwało dwa dni i zgromadziło przeszło 20 tys. uczestników.
 
-Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie aplikacji mobilnych w środowisku iOS oraz frontendowe aspekty tworzenia aplikacji webowych.</mutableString>
+Aktualnie rozwijam się w kierunku programowania. Interesuje mnie programowanie aplikacji mobilnych w środowisku iOS oraz frontendowe aspekty tworzenia aplikacji webowych.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1141,12 +1141,12 @@ Unicode: U+1F3E0, UTF-8: F0 9F 8F A0  Poznań</string>
         <image name="services-256" width="85" height="85"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fkd-gw-YNR"/>
+        <segue reference="wPR-dq-47m"/>
+        <segue reference="AI4-RJ-1rI"/>
+        <segue reference="kp5-As-DfG"/>
         <segue reference="YgX-vi-LWW"/>
+        <segue reference="LQ5-Q3-gIX"/>
         <segue reference="6sE-BP-jbp"/>
         <segue reference="0i5-Js-gnq"/>
-        <segue reference="wPR-dq-47m"/>
-        <segue reference="kp5-As-DfG"/>
-        <segue reference="LQ5-Q3-gIX"/>
     </inferredMetricsTieBreakers>
 </document>
