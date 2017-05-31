@@ -111,8 +111,8 @@ override func viewDidLoad() {
     
 // Background color
 
-let kolorTla = UIColor(red: 0/255.0, green: 66/255.0, blue: 132/255.0, alpha: 1.0)
-view.backgroundColor = kolorTla
+let backgroundColor = UIColor(red: 0/255.0, green: 66/255.0, blue: 132/255.0, alpha: 1.0)
+view.backgroundColor = backgroundColor
 
 // Image
 
