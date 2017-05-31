@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="-1416"/>
+            <point key="canvasLocation" x="-943" y="-637"/>
         </scene>
         <!--Edu View Controller-->
         <scene sceneID="zOf-ie-0Cb">
@@ -1145,8 +1145,8 @@ Unicode: U+1F3E0, UTF-8: F0 9F 8F A0  Poznań</string>
         <segue reference="AI4-RJ-1rI"/>
         <segue reference="kp5-As-DfG"/>
         <segue reference="YgX-vi-LWW"/>
+        <segue reference="LQ5-Q3-gIX"/>
         <segue reference="6sE-BP-jbp"/>
         <segue reference="0i5-Js-gnq"/>
-        <segue reference="f2l-0t-EOD"/>
     </inferredMetricsTieBreakers>
 </document>
